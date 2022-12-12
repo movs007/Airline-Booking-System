@@ -43,7 +43,7 @@
                                         <div class="col-md-4">
                                             <a href="{% url 'public-page' %}">Go Back</a>
                                         </div>
-                                        <button class="btn btn-sm rounded-0 btn-primary">
+                                        <button type ="submit" class="btn btn-sm rounded-0 btn-primary">
                                             Login
                                         </button>
                                     </div>
@@ -86,7 +86,7 @@
                 type: 'POST',
                 dataType: 'json',
                 error: err => {
-                    console.log(err)
+                    console.log(err);
                     alert("An error occured", 'error');
                     end_loader();
                 },
